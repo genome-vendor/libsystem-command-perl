@@ -1,0 +1,18 @@
+Source: libsystem-command-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 7)
+Build-Depends-Indep: perl (>= 5.10.1), libipc-run-perl
+Maintainer: Nathaniel Nutter <nnutter@genome.wustl.edu>
+Standards-Version: 3.8.3
+Homepage: http://search.cpan.org/dist/System-Command/
+
+Package: libsystem-command-perl
+Architecture: all
+Depends: ${perl:Depends}, ${misc:Depends}, libipc-run-perl, perl (>= 5.6)
+Description: Object for running system commands
+ System::Command is a class that launches external system commands and return
+ an object representing them, allowing to interact with them through their
+ STDIN, STDOUT and STDERR handles.
+ .
+ This description was automagically extracted from the module by dh-make-perl.
